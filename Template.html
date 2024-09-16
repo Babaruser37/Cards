@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dungeons and Dragons Cards Web View" />
+  <meta name="author" content="Babaruser37">
+  <title>DnD Cards</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+</head>
+<body>
+<!-- ========== Toggle Buttons  ========== -->  
+  <div class="btn-wrapper">
+    <button class="myButton" id="myButton">Common</button>
+    <button class="myButton" id="myButton2">Rare</button>
+    <button class="myButton" id="myButton3">Epic</button>
+    <button class="myButton" id="myButton4">Legendary</button>
+  </div>
+<!-- ========== Landmarks  ========== -->
+  <div class="count-container">
+    <span id="card-count"></span>
+  </div>
+<!-- ========== Character Cards  ========== -->
+  <div class="Container color grow">
+    
+    <img class="Card common" src="..." alt="Card 1" />
+    <img class="Card rare" src="..." alt="Card 2" />
+    <img class="Card epic" src="..." alt="Card 3" />
+    <img class="Card legendary" src="..." alt="Card 4" />
+
+
+    <!-- ========== Landmarks  ========== -->
+    <div class="Container color grow">
+      <img class="Card common" src="..." alt="Landmark card 1" />
+      <img class="Card rare" src="..." alt="Landmark card 2" />
+      <img class="Card epic" src="..." alt="Landmark card 3" />
+      <img class="Card legendary" src="..." alt="Landmark card 4" />
+    </div>
+  </div>
+
+  <script>
+// Common Button Code
+var toggleCommon = false;
+const buttons = document.getElementById("myButton")
+
+buttons.addEventListener("click", function() {
+  buttons.classList.toggle("active");
+  const testlist = document.querySelectorAll(".common");
+
+  if (toggleCommon === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleCommon = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleCommon = false
+    });
+  }
+});
+// Rare Button Code
+var toggleRare = false;
+const buttons2 = document.getElementById("myButton2")
+
+buttons2.addEventListener("click", function() {
+  buttons2.classList.toggle("active");
+  const testlist = document.querySelectorAll(".rare");
+
+  if (toggleRare === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleRare = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleRare = false
+    });
+  }
+});
+// Epic Button Code
+var toggleEpic = false;
+const buttons3 = document.getElementById("myButton3")
+
+buttons3.addEventListener("click", function() {
+  buttons3.classList.toggle("active");
+  const testlist = document.querySelectorAll(".epic");
+
+  if (toggleEpic === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleEpic = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleEpic = false
+    });
+  }
+});
+// Legendary Button Code
+var toggleLegendary = false;
+const buttons4 = document.getElementById("myButton4")
+
+buttons4.addEventListener("click", function() {
+  buttons4.classList.toggle("active");
+  const testlist = document.querySelectorAll(".legendary");
+
+  if (toggleLegendary === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleLegendary = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleLegendary = false
+    });
+  }
+});
+// Card Counter //
+function countCardClass() {
+  const cardElements = document.querySelectorAll('.Card');
+  return cardElements.length;
+}
+const cardCount = countCardClass();
+const countElement = document.getElementById('card-count');
+countElement.textContent = `${cardCount}`;
+  </script>
+</body>
+</html>

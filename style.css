@@ -109,6 +109,7 @@
     background-position: 0% 50%;
   }
 }
+/* Toggle Button Style */
 .btn-wrapper{
   padding-top: 1%;
   padding-bottom: 2%;
@@ -139,10 +140,11 @@
   background-color: rgb(122, 117, 117);
 
 }
+/* Counter Style */
 .count-container {
   padding: 5px;
   font-size: 39px;
   color: rgb(245, 218, 179);
   padding: 1%;
-  padding-right: 3.5%;
+  padding-right: 4%;
 }

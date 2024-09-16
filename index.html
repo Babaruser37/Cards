@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dungeons and Dragons Cards Web View" />
+  <meta name="author" content="Babaruser37">
+  <title>DnD Cards</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+</head>
+<body>
+<!-- ========== Toggle Buttons  ========== -->  
+  <div class="btn-wrapper">
+    <button class="myButton" id="myButton">Common</button>
+    <button class="myButton" id="myButton2">Rare</button>
+    <button class="myButton" id="myButton3">Epic</button>
+    <button class="myButton" id="myButton4">Legendary</button>
+  </div>
+<!-- ========== Landmarks  ========== -->
+  <div class="count-container" style="position: absolute; top: 0; right: 0;">
+    <span id="card-count"></span>
+  </div>
+<!-- ========== Character Cards  ========== -->
+  <div class="Container color grow">
+    <img class="Card rare" src="cards/Miriel.png" alt="" />
+    <img class="Card common" src="cards/Rama.png" alt="" />
+    <img class="Card legendary" src="cards/Keibol.png" alt="" />
+    <img class="Card legendary" src="cards/2_Solana_Vados.png" alt="" />
+    <img class="Card rare" src="cards/Asa.png" alt="" />
+    <img class="Card common" src="cards/Syndicate_Assassin.png" alt="" />
+    <img class="Card rare" src="cards/Faith.png" alt="" />
+    <img class="Card common" src="cards/Sisera.png" alt="" />
+    <img class="Card rare" src="cards/Emiel_Regis.png" alt="" />
+    <img class="Card common" src="cards/Serallax.png" alt="" />
+    <img class="Card common" src="cards/Primordial_Shaman.png" alt="" />
+    <img class="Card rare" src="cards/Yui.png" alt="" />
+    <img class="Card rare" src="cards/Illithid_Hive_Ship.png" alt="" />
+    <img class="Card rare" src="cards/Illithid_Hive_Ship.png" alt="" />
+    <img class="Card epic" src="cards/Queen_Laeryn_Dryffin.png" alt="" />
+    <img class="Card epic" src="cards/Queen_Laeryn_Dryffin.png" alt="Dupe" />
+    <img class="Card common" src="cards/32_Emperors_Guard_Muyoshi_.png" alt="" />
+    <img class="Card common" src="cards/32_Emperors_Guard_Muyoshi_.png" alt="" />
+    <img class="Card legendary" src="cards/7_Emhyr_the_Golden_Emperor.png" alt="" />
+    <img class="Card rare" src="cards/16_Emperor_Emhyr.png" alt="" />
+    <img class="Card rare" src="cards/19_Emperors_Guard_Yue_Yu.webp" alt="" />
+    <img class="Card rare" src="cards/20_Emperors_Guard_Zurasha.webp" alt="" />
+    <img class="Card common" src="cards/24_He_Who_Smiles.png" alt="" />
+    <img class="Card common" src="cards/24_He_Who_Smiles.png" alt="Dupe" />
+    <img class="Card rare" src="cards/14_General_Kazan.png" alt="" />
+    <img class="Card rare" src="cards/21_Sir_A._Ted.png" alt="" />
+    <img class="Card rare" src="cards/22_Scarmother_Vrynna.png" alt="" />
+    <img class="Card common" src="cards/Valkyrie_Hildr.png" alt="" />
+    <img class="Card epic" src="cards/17_Valkyrie_Svei.png" alt="" />
+    <img class="Card legendary" src="cards/4_Vanya_Destined_Death.png" alt="" />
+    <img class="Card common" src="cards/37_Lei_Wo_Soldier.png" alt="" />
+    <img class="Card common" src="cards/43_Anastasia.webp" alt="" />
+    <img class="Card common" src="cards/43_Anastasia.webp" alt="Dupe" />
+    <img class="Card common" src="cards/43_Anastasia.webp" alt="Dupe" />
+    <img class="Card rare" src="cards/14_Rosemary.webp" alt="" />
+    <img class="Card common" src="cards/35_General_Garas.webp" alt="" />
+    <img class="Card common" src="cards/42_Sir_Ounded.webp" alt="" />
+    <img class="Card epic" src="cards/13_The_Whisperer.webp" alt="" />
+    <img class="Card common" src="cards/44_Iris_Von_Everec.webp" alt="" />
+    <img class="Card common" src="cards/45_Dottore.webp" alt="" />
+    <img class="Card common" src="cards/36_Princess_Farah_.webp" alt="" />
+    <img class="Card legendary" src="cards/3_Zariel_the_Archdevil.png" alt="" />
+    <img class="Card common" src="cards/32_Kytin_Guard.webp" alt="" />
+    <img class="Card common" src="cards/24_Mask_Maker.webp" alt="" />
+    <img class="Card common" src="cards/44_Illithid_Matriach.webp" alt="" />
+    <img class="Card common" src="cards/34_Telma.webp" alt="" />
+    <img class="Card epic" src="cards/9_Kairi_Imahara.webp" alt="" />
+    <img class="Card common" src="cards/56_Master_of_Shadows.webp" alt="" />
+    <img class="Card common" src="cards/39_Sorrow.webp" alt="" />
+    <img class="Card legendary" src="cards/5_King_Kastamere.png" alt="" />
+    <img class="Card legendary" src="cards/1_Bhazu_Destined_Death.png" alt="" />
+    <img class="Card common" src="cards/49_Condemned_Warrior.webp" alt="" />
+    <img class="Card rare" src="cards/23_Lady_Serilla.webp" alt="" />
+    <img class="Card epic" src="cards/11_Lady_Divinity.webp" alt="" />
+    <img class="Card epic" src="cards/19_Bhazu_Briar.webp" alt="" />
+    <img class="Card epic" src="cards/11_Kraven.webp" alt="" />
+    <img class="Card legendary" src="cards/7_Eternum_Fire_Herald.png" alt="" />
+    <img class="Card common" src="cards/51_Frigg_Daughter_of_Earth.png" alt="" />
+    <img class="Card common" src="cards/52_Firescale_Serpent.png" alt="" />
+    <img class="Card common" src="cards/41_Primordial_Shaman.png" alt="" />
+    <img class="Card common" src="cards/48_Idle_Transformer.png" alt="" />
+    <img class="Card common" src="cards/48_Idle_Transformer.png" alt="" />
+    <img class="Card common" src="cards/57_Makari.png" alt="" />
+    <img class="Card rare" src="cards/22_Erland_Ael_Carrig.png" alt="" />
+    <img class="Card rare" src="cards/18_Iori_Imahara.png" alt="" />
+    <img class="Card legendary" src="cards/4_Serris_Destined_Death.png" alt="" />
+
+
+    <!-- ========== Landmarks  ========== -->
+    <div class="Container color grow">
+      <img class="Card rare" src="cards/16_Sol_Expanse.png" alt="" />
+      <img class="Card common" src="cards/33_Blathanna.png" alt="" />
+      <img class="Card common" src="cards/Var_Comis.png" alt="" />
+      <img class="Card rare" src="cards/Shadowfell.png" alt="" />
+      <img class="Card common" src="cards/29_West_Kaiden.png" alt="" />
+      <img class="Card rare" src="cards/15_Danmir.png" alt="" />
+      <img class="Card common" src="cards/27_Saeshore.webp" alt="" />
+      <img class="Card common" src="cards/46_Oxenfurt.webp" alt="" />
+      <img class="Card common" src="cards/49_Floating_Isles.png" alt="" />
+      <img class="Card common" src="cards/53_Scorched_Skies.png" alt="" />
+    </div>
+  </div>
+
+  <script>
+// Common Button Code
+var toggleCommon = false;
+const buttons = document.getElementById("myButton")
+
+buttons.addEventListener("click", function() {
+  buttons.classList.toggle("active");
+  const testlist = document.querySelectorAll(".common");
+
+  if (toggleCommon === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleCommon = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleCommon = false
+    });
+  }
+});
+// Rare Button Code
+var toggleRare = false;
+const buttons2 = document.getElementById("myButton2")
+
+buttons2.addEventListener("click", function() {
+  buttons2.classList.toggle("active");
+  const testlist = document.querySelectorAll(".rare");
+
+  if (toggleRare === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleRare = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleRare = false
+    });
+  }
+});
+// Epic Button Code
+var toggleEpic = false;
+const buttons3 = document.getElementById("myButton3")
+
+buttons3.addEventListener("click", function() {
+  buttons3.classList.toggle("active");
+  const testlist = document.querySelectorAll(".epic");
+
+  if (toggleEpic === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleEpic = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleEpic = false
+    });
+  }
+});
+// Legendary Button Code
+var toggleLegendary = false;
+const buttons4 = document.getElementById("myButton4")
+
+buttons4.addEventListener("click", function() {
+  buttons4.classList.toggle("active");
+  const testlist = document.querySelectorAll(".legendary");
+
+  if (toggleLegendary === false) {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'none';
+      toggleLegendary = true
+    });
+  } else {
+    testlist.forEach((testitem) => {
+      testitem.style.display = 'block';
+      toggleLegendary = false
+    });
+  }
+});
+// Card Counter //
+function countCardClass() {
+  const cardElements = document.querySelectorAll('.Card');
+  return cardElements.length;
+}
+const cardCount = countCardClass();
+const countElement = document.getElementById('card-count');
+countElement.textContent = `${cardCount}`;
+  </script>
+</body>
+</html>
